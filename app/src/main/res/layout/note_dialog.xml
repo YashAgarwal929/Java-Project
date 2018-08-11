@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_margin"
+    android:paddingRight="@dimen/activity_margin"
+    android:paddingTop="@dimen/activity_margin">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10"
+        android:fontFamily="sans-serif-medium"
+        android:lineSpacingExtra="8sp"
+        android:text="@string/lbl_new_note_title"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/lbl_new_note_title"
+        android:textStyle="normal" />
+
+    <Button
+        android:id="@+id/btn_t"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#049639"
+        android:textColor="#ffffff"
+        android:layout_alignStart="@+id/Plain"
+        android:layout_below="@+id/btn_d"
+        android:text="Set Time" />
+
+    <TextView
+        android:id="@+id/Plain"
+        android:layout_width="85dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/dialog_title"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="83dp"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:text="Medicine"
+        tools:ignore="UnknownId"
+        android:background="#049639"
+        android:textColor="#ffffff"/>
+
+    <Button
+        android:id="@+id/btn_d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/dialog_title"
+        android:layout_alignTop="@+id/toDate"
+        android:text="Set Date"
+        android:background="#049639"
+        android:textColor="#ffffff"/>
+
+    <EditText
+        android:id="@+id/note"
+        android:layout_width="138dp"
+        android:layout_height="48dp"
+        android:layout_alignEnd="@+id/totime"
+        android:layout_alignTop="@+id/Plain"
+        android:textColor="@color/note_list_text"
+        android:textSize="20sp"
+        android:text="Medicine" />
+
+    <EditText
+        android:id="@+id/toDate"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:layout_alignStart="@+id/note"
+        android:layout_below="@+id/Plain"
+        android:textColor="@color/note_list_text" />
+
+    <EditText
+        android:id="@+id/totime"
+        android:layout_width="142dp"
+        android:layout_height="48dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/btn_t"
+        android:layout_marginEnd="29dp"
+        android:textColor="@color/note_list_text" />
+
+
+</RelativeLayout>
